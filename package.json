@@ -1,14 +1,32 @@
 {
   "name": "dsh-snowluma-control",
   "version": "0.1.0",
-  "description": "DSH 插件：设置页一键启停 SnowLuma QQ 机器人",
+  "description": "DSH 插件：设置页一键启停 SnowLuma QQ 机器人。One-click start/stop/restart for the SnowLuma QQ bot process, with log-driven WebUI & OneBot readiness in the settings panel.",
   "type": "module",
   "main": "./lib/index.js",
   "license": "MIT",
+  "author": "Britneycode",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Britneycode/dsh-snowluma-control.git"
+  },
+  "homepage": "https://github.com/Britneycode/dsh-snowluma-control#readme",
+  "keywords": [
+    "dsh-plugin",
+    "dsh",
+    "deepseek-harness",
+    "snowluma",
+    "qq-bot",
+    "onebot",
+    "process-manager"
+  ],
   "exports": {
     ".": "./lib/index.js",
     "./client": "./lib/client.js",
     "./package.json": "./package.json"
+  },
+  "scripts": {
+    "test": "node --test"
   },
   "engines": {
     "node": ">=22.5.0"
