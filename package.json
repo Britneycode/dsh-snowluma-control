@@ -1,0 +1,30 @@
+{
+  "name": "dsh-snowluma-control",
+  "version": "0.1.0",
+  "description": "DSH 插件：设置页一键启停 SnowLuma QQ 机器人",
+  "type": "module",
+  "main": "./lib/index.js",
+  "license": "MIT",
+  "exports": {
+    ".": "./lib/index.js",
+    "./client": "./lib/client.js",
+    "./package.json": "./package.json"
+  },
+  "engines": {
+    "node": ">=22.5.0"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "inject": [
+        "slots"
+      ],
+      "external": [
+        "react"
+      ]
+    }
+  }
+}

@@ -1,0 +1,21 @@
+# Alma 快照库（本机产物）
+.alma-snapshots
+
+# 真机验证夹具：写死了本机路径、宿主安装目录与进程 PATH，离开本机跑不起来
+.host-harness/
+
+# SDD 账本（含本机路径与半成品状态）
+.superpowers/
+
+# AI 交接文档：只在本机，不进公开仓库（含本机路径 / 半成品状态 / 内部复盘）
+AGENTS.md
+PROJECT_INDEX.md
+NOW.md
+MAP.md
+RUNBOOK.md
+DECISIONS.md
+RISKS.md
+history/
+
+# 设计文档与实施计划：含本机路径与真实账号，未脱敏前不入库
+docs/
